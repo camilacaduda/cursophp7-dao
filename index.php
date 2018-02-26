@@ -1,16 +1,18 @@
-<<?php 
+<?php 
 
 require_once("config.php");
 
-$sql = new Sql();
-
-$usuarios = select("SELECT * FROM tb_usuario");
-
-echo json_encode($usuarios);
-
+//carrega um usuario
+/*$root = new Usuario();
+$root->loadbyId(3);*/
+//echo $root;
 
 
+// carrega uma lista
 
+$list = Usuario::getList();
+
+echo json_encode($list);
 
 
 
