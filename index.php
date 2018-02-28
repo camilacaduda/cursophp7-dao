@@ -10,11 +10,24 @@ $root->loadbyId(3);*/
 
 // carrega uma lista
 
-$list = Usuario::getList();
+/*$list = Usuario::getList();
 
-echo json_encode($list);
+echo json_encode($list);*/
 
+//trazendo os dados do aluno
+/*$aluno = new Usuario();
 
+//criando um novo usuario
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@alun0");
+$aluno->insert();
+echo $aluno;*/
 
+//ataulizando um usuario
+
+$usuario = new Usuario();
+$usuario->loadbyId(4);
+$usuario->update("professor","!@#$%&");
+echo $usuario;
 
  ?>
