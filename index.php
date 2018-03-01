@@ -23,11 +23,17 @@ $aluno->setDessenha("@alun0");
 $aluno->insert();
 echo $aluno;*/
 
-//ataulizando um usuario
+//atualizando um usuario
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadbyId(4);
 $usuario->update("professor","!@#$%&");
+echo $usuario;*/
+
+//deletando um suaurio
+
+$usuario->loadbyId(4);
+$usuario->delete()();
 echo $usuario;
 
  ?>
